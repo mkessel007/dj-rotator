@@ -1,0 +1,16 @@
+{
+	"name": "dj-rotator",
+	"version": "2.0",
+	"description": "Schedule and rotate DJ's on your WordPress web site",
+	"author": {
+		"name": "Greg Rickaby dESIGN",
+		"url": "http://gregrickaby.com"
+	},
+	"license": "GPLv2",
+	"devDependencies": {
+	    "grunt": "latest",
+	    "grunt-contrib-watch": "latest",
+	    "grunt-wp-i18n": "latest",
+	    "load-grunt-tasks": "latest"
+	}
+}

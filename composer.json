@@ -1,0 +1,35 @@
+{
+	"name": "dj-rotator",
+	"description": "Schedule and rotate DJ's on your WordPress web site",
+	"keywords": ["wordpress", "plugin", "generator-plugin-wp"],
+	"homepage": "http://gregrickaby.com",
+	"license": "GPLv2",
+	"authors": [
+	{
+		"name": "Greg Rickaby dESIGN",
+		"homepage": "http://gregrickaby.com"
+	}
+	],
+	"minimum-stability": "dev",
+	"type": "wordpress-plugin",
+	"autoload": {
+		"classmap": ["dj-rotator.php", "includes/"]
+	},
+	"require": {
+		"php": ">=5.2",
+		"xrstf/composer-php52": "1.*",
+		"webdevstudios/cmb2": "dev-trunk",
+		"webdevstudios/cpt-core": "dev-master"
+	},
+	"scripts": {
+        "post-install-cmd": [
+            "xrstf\\Composer52\\Generator::onPostInstallCmd"
+        ],
+        "post-update-cmd": [
+            "xrstf\\Composer52\\Generator::onPostInstallCmd"
+        ],
+        "post-autoload-dump": [
+            "xrstf\\Composer52\\Generator::onPostInstallCmd"
+        ]
+    }
+}
